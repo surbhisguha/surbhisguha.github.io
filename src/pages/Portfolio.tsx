@@ -2,18 +2,17 @@ import React, { useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
-import About from '../components/About';
-import Strengths from '../components/Strengths';
-import Journey from '../components/Journey';
-import Work from '../components/Work';
-import Outside from '../components/Outside';
+import Build from '../components/Build';
+import Grow from '../components/Grow';
+import Experience from '../components/Experience';
+import Writing from '../components/Writing';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import useActiveSection from '../hooks/useActiveSection';
 import useReveal from '../hooks/useReveal';
 
 // Module scope keeps the reference stable across renders for useActiveSection.
-const SECTION_IDS = ['hero', 'about', 'strengths', 'journey', 'work', 'outside', 'contact'];
+const SECTION_IDS = ['hero', 'build', 'grow', 'experience', 'writing', 'contact'];
 
 const Portfolio: React.FC = () => {
   const activeSection = useActiveSection(SECTION_IDS);
@@ -42,11 +41,10 @@ const Portfolio: React.FC = () => {
       <Header activeSection={activeSection} />
       <main>
         <Hero />
-        <About />
-        <Strengths />
-        <Journey />
-        <Work />
-        <Outside />
+        <Build />
+        <Grow />
+        <Experience />
+        <Writing />
         <Contact />
       </main>
       <Footer />
