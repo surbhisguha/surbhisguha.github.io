@@ -2,6 +2,7 @@ import React from 'react';
 import { ArrowUpRight } from 'lucide-react';
 import Section from './Section';
 import { EMAIL, LINKEDIN_URL, RESUME_PATH } from '../content/links';
+import { SUNDAI_URL } from '../content/site';
 
 interface ContactLink {
   label: string;
@@ -14,14 +15,15 @@ const contactLinks: ContactLink[] = [
   { label: 'Email', value: EMAIL, href: `mailto:${EMAIL}` },
   { label: 'LinkedIn', value: 'in/surbhi-guha', href: LINKEDIN_URL, external: true },
   { label: 'Résumé', value: 'PDF', href: RESUME_PATH, external: true },
+  { label: 'Projects', value: 'Sundai Club', href: SUNDAI_URL, external: true },
 ];
 
 const Contact: React.FC = () => (
   <Section
     id="contact"
-    index="06"
+    index="05"
     label="contact"
-    lead="I built this site to share a little more than what fits on a résumé. If anything here resonated, I’d love to spend twenty minutes learning about what you’re building and how I might contribute."
+    lead="Building something in AI and need someone who can sell it, grow it and ship the next experiment? I’d love to hear what you’re working on."
   >
     <ul className="mt-12 border-t border-rule">
       {contactLinks.map((link) => (

@@ -3,11 +3,10 @@ import { Link } from 'react-router-dom';
 import SectionLink from './SectionLink';
 
 const NAV_ITEMS = [
-  { id: 'about', label: 'story' },
-  { id: 'strengths', label: 'strengths' },
-  { id: 'journey', label: 'journey' },
-  { id: 'work', label: 'work' },
-  { id: 'outside', label: 'outside' },
+  { id: 'build', label: 'build' },
+  { id: 'grow', label: 'grow' },
+  { id: 'experience', label: 'experience' },
+  { id: 'writing', label: 'writing' },
   { id: 'contact', label: 'contact' },
 ];
 
